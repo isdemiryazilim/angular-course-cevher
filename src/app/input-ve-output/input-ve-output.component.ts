@@ -9,6 +9,10 @@ export class InputVeOutputComponent implements OnInit {
 
   ad = 'Ali';
 
+  alertGoster(event) {
+    alert(event)
+  }
+
   constructor() { }
 
   ngOnInit(): void {
