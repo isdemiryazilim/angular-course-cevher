@@ -12,6 +12,10 @@ export class DataBindingComponent implements OnInit {
     soyad: 'Yılmaz'
   };
 
+  goster() {
+    alert('Merhaba Dünya');
+  }
+
   constructor() { }
 
   ngOnInit(): void {
