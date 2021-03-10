@@ -7,6 +7,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { InputVeOutputComponent } from './input-ve-output/input-ve-output.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-listeleme.component';
+import { KayitFormComponent } from './kayit-form/kayit-form.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'input-ve-output', component: InputVeOutputComponent },
   { path: 'directives', component: DirectivesComponent },
   { path: 'service', component: KullaniciListelemeComponent },
+  { path: 'kayit-form', component: KayitFormComponent },
   { path: '', component: AnasayfaComponent },
 ];
 

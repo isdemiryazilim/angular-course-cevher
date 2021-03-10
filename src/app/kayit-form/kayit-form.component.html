@@ -1,0 +1,14 @@
+<h2>Kayıt Form</h2>
+
+<form [formGroup]="kayitForm" (ngSubmit)="formYolla()">
+    <label> Ad : 
+        <input type="text" formControlName="ad" >
+    </label>
+    <label> Şehir :
+        <select formControlName="sehir">
+            <option value="hatay">Hatay</option>
+            <option value="istanbul">İstanbul</option>
+        </select>
+    </label>
+    <button>Gönder</button>
+</form>
