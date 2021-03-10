@@ -12,6 +12,8 @@ import { PipeComponent } from './pipe/pipe.component';
 import { InputVeOutputComponent } from './input-ve-output/input-ve-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-listeleme.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { DirectivesComponent } from './directives/directives.component';
     PipeComponent,
     InputVeOutputComponent,
     MerhabaComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    KullaniciListelemeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
