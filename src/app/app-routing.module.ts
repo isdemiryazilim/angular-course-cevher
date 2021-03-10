@@ -4,12 +4,14 @@ import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { InputVeOutputComponent } from './input-ve-output/input-ve-output.component';
 
 
 const routes: Routes = [
   { path: 'hakkinda', component: HakkindaComponent },
   { path: 'data-binding', component: DataBindingComponent },
   { path: 'pipe', component: PipeComponent },
+  { path: 'input-ve-output', component: InputVeOutputComponent },
   { path: '', component: AnasayfaComponent },
 ];
 
