@@ -8,6 +8,7 @@ import { InputVeOutputComponent } from './input-ve-output/input-ve-output.compon
 import { DirectivesComponent } from './directives/directives.component';
 import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-listeleme.component';
 import { KayitFormComponent } from './kayit-form/kayit-form.component';
+import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'directives', component: DirectivesComponent },
   { path: 'service', component: KullaniciListelemeComponent },
   { path: 'kayit-form', component: KayitFormComponent },
+  { path: 'coklu-dil', component: CokluDilComponent },
   { path: '', component: AnasayfaComponent },
 ];
 

@@ -16,6 +16,8 @@ import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-lis
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './token.interceptor';
 import { KayitFormComponent } from './kayit-form/kayit-form.component';
+import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { KayitFormComponent } from './kayit-form/kayit-form.component';
     MerhabaComponent,
     DirectivesComponent,
     KullaniciListelemeComponent,
-    KayitFormComponent
+    KayitFormComponent,
+    CokluDilComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { KayitFormComponent } from './kayit-form/kayit-form.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslocoRootModule
   ],
   providers: [
     {
