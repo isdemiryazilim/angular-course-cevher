@@ -8,13 +8,15 @@ import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnasayfaComponent,
     HakkindaComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
