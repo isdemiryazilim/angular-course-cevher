@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { PipeComponent } from './pipe/pipe.component';
 import { InputVeOutputComponent } from './input-ve-output/input-ve-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MerhabaComponent } from './merhaba/merhaba.component';
     DataBindingComponent,
     PipeComponent,
     InputVeOutputComponent,
-    MerhabaComponent
+    MerhabaComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

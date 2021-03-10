@@ -1,0 +1,6 @@
+<h2>Directives</h2>
+
+<p [ngClass]="hataliMi? 'kirmizi-yazi' : ''">Merhaba Dünya</p>
+<p *ngIf="gosterilsinMi">Bu görünmeyecek</p>
+<p *ngIf="!gosterilsinMi">Bu görünecek</p>
+<span *ngFor="let isim of isimler">{{isim}}</span>
