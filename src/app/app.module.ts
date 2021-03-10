@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AnasayfaComponent } from './anasayfa/anasayfa.component';
+import { HakkindaComponent } from './hakkinda/hakkinda.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnasayfaComponent,
+    HakkindaComponent
   ],
   imports: [
     BrowserModule,
