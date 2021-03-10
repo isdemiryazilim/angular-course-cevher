@@ -13,7 +13,8 @@ import { InputVeOutputComponent } from './input-ve-output/input-ve-output.compon
 import { MerhabaComponent } from './merhaba/merhaba.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-listeleme.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './token.interceptor';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,13 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
