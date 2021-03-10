@@ -2,9 +2,9 @@
 
 
 ## Kurulum
-    `npm install`
+    npm install
 
 ## Çalıştırma
-    `ng serve --open`
+    ng serve --open
 
 http://localhost:4200/ adresinde ayağa kalkacak.
