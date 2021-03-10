@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnasayfaComponent,
-    HakkindaComponent
+    HakkindaComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
