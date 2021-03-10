@@ -12,6 +12,8 @@ export class DataBindingComponent implements OnInit {
     soyad: 'Yılmaz'
   };
 
+  mesaj = '';
+
   goster() {
     alert('Merhaba Dünya');
   }

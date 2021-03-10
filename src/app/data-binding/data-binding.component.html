@@ -1,3 +1,10 @@
 <h2>Data Binding</h2>
+<hr>
+<h3>One Way Binding</h3>
 <p>{{kullanici.ad}} -- {{kullanici.soyad}}</p>
+
 <button (click)="goster()" >Göster</button>
+<hr>
+<h3>Two Way Binding</h3>
+<input [(ngModel)]='mesaj' />
+<p>{{mesaj}}</p>

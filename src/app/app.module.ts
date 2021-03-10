@@ -7,6 +7,7 @@ import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
