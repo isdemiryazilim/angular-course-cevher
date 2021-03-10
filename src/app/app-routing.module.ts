@@ -9,6 +9,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { KullaniciListelemeComponent } from './kullanici-listeleme/kullanici-listeleme.component';
 import { KayitFormComponent } from './kayit-form/kayit-form.component';
 import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
+import { AngularMaterialComponent } from './angular-material/angular-material.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'service', component: KullaniciListelemeComponent },
   { path: 'kayit-form', component: KayitFormComponent },
   { path: 'coklu-dil', component: CokluDilComponent },
+  { path: 'angular-material', component: AngularMaterialComponent },
   { path: '', component: AnasayfaComponent },
 ];
 

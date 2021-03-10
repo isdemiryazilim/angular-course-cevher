@@ -18,7 +18,14 @@ import { TokenInterceptor } from './token.interceptor';
 import { KayitFormComponent } from './kayit-form/kayit-form.component';
 import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
-
+import { AngularMaterialComponent } from './angular-material/angular-material.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +38,8 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
     DirectivesComponent,
     KullaniciListelemeComponent,
     KayitFormComponent,
-    CokluDilComponent
+    CokluDilComponent,
+    AngularMaterialComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,14 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatTabsModule,
+    MatTableModule
   ],
   providers: [
     {
