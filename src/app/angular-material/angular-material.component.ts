@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 const KULLANICILAR = [
   { ad: 'Ahmet', soyad: 'Yılmaz' },
@@ -15,4 +16,13 @@ const KULLANICILAR = [
 export class AngularMaterialComponent {
   displayedColumns: string[] = ['ad', 'soyad'];
   dataSource = KULLANICILAR;
+
+  constructor(private snackBar: MatSnackBar) { }
+
+  bildirimGoster() {
+    this.snackBar.open('Bir Hata Oluştu', 'Kapat', {
+      horizontalPosition: 'end',
+      verticalPosition: 'top',
+    });
+  }
 }
